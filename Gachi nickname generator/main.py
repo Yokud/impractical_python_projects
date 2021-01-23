@@ -26,7 +26,7 @@ def main():
         print("\nВаше гачи-имя: ", end = '')
         print(get_nickname(names, lastnames), file = sys.stderr)
         try_again = input("\nХотите попробовать ещё раз?"
-                          "(Введите 'n' для отказа): ").lower() == 'n'
+                          "(Введите 'n' для отказа): ").lower() != 'n'
         print("=" * 50)
 
     print("\nЗавершение работы")
