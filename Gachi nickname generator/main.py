@@ -1,16 +1,16 @@
-"""Main programm"""
+"""Main programm."""
 
 import sys
 import random
 
 
 def get_nickname(names_list, lastnames_list):
-    """return randomly generated nickname"""
+    """Return randomly generated nickname."""
     return "{} {}".format(random.choice(names_list),
                           random.choice(lastnames_list))
 
 def main():
-    """main function"""
+    """Print randomly generate gachi-nickname."""
     names = ("Billy", "Boss of the", "Van", "Artist", "Slave", "Boy")
 
     lastnames = ("Herrington", "Gym", "Deep dark fantasies", "Fisting", "Spanking",
@@ -23,7 +23,7 @@ def main():
 
     while try_again:
         print("\n\n", '=' * 50, sep = '')
-        print("\nВаше гачи-имя: ", end = '')
+        print("Ваше гачи-имя: ", end = '')
         print(get_nickname(names, lastnames), file = sys.stderr)
         try_again = input("\nХотите попробовать ещё раз?"
                           "(Введите 'n' для отказа): ").lower() != 'n'
